@@ -1,8 +1,3 @@
-## possible classes
-  - game loop
-  - current player
-  - user i/o
-
 ## game loop
   - while either player 1 or 2 score is not zero
   - prompt current player for input (answer to question)
@@ -13,3 +8,12 @@
   - current player
   - player scores
   - user input
+  - game text
+  - question variables
+
+## possible classes
+  - main function
+  - question generator
+  - input gatherer
+  - player scores/current player
+  - question/answer evaluator
