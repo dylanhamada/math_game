@@ -15,6 +15,3 @@ class Question
     }
   end
 end
-
-new_question = Question.new()
-puts new_question.question_answer
