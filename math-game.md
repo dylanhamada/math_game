@@ -15,5 +15,6 @@
   - main function
   - question generator
   - input gatherer
-  - player scores/current player
   - question/answer evaluator
+  - player scores
+  - current player
