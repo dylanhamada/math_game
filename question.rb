@@ -10,7 +10,7 @@ class Question
   end
 
   # return a hash consisting of a question string and a number answer
-  def question_answer 
+  def question_and_answer 
     {
       question: "Player #{@current_player}: What does #{@numOne} plus #{@numTwo} equal?",
       answer: @numOne + @numTwo

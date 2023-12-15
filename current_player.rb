@@ -6,7 +6,7 @@ class CurrentPlayer
     @current_player = 1
   end
 
-  def player_toggle
+  def toggle_player
     if @current_player == 1
       @current_player = 2
     else
