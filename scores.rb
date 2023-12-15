@@ -1,5 +1,8 @@
 # calculates score for each player, and returns a hash including the scores and a score message
 class Scores
+  attr_reader :p1_score
+  attr_reader :p2_score
+  
   def initialize(current_player)
     @p1_score = 3
     @p2_score = 3
@@ -13,14 +16,7 @@ class Scores
     end
   end
 
-  def player_scores
-    {
-      p1_score: @p1_score,
-      p2_score: @p2_score
-    }
-  end
-
   def display_scores
-    score_message = "P1: #{@p1_score}/3 vs. P2: #{@p2_score}/3"
+    "P1: #{@p1_score}/3 vs. P2: #{@p2_score}/3"
   end
 end

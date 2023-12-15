@@ -7,13 +7,16 @@ class Question
     # two numbers
     @numOne = rand(1..20)
     @numTwo = rand(1..20)
+    @answer = nil
   end
 
-  # return a hash consisting of a question string and a number answer
-  def question_and_answer 
-    {
-      question: "Player #{@current_player}: What does #{@numOne} plus #{@numTwo} equal?",
-      answer: @numOne + @numTwo
-    }
+  # return the answer
+  def answer 
+    @answer = @numOne + @numTwo
+  end
+
+  # return a question string
+  def question_message
+    "Player #{@current_player}: What does #{@numOne} plus #{@numTwo} equal?"
   end
 end
