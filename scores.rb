@@ -16,8 +16,11 @@ class Scores
   def player_scores
     {
       p1_score: @p1_score,
-      p2_score: @p2_score,
-      score_message: "P1: #{@p1_score}/3 vs. P2: #{@p2_score}/3"
+      p2_score: @p2_score
     }
+  end
+
+  def display_scores
+    score_message = "P1: #{@p1_score}/3 vs. P2: #{@p2_score}/3"
   end
 end
