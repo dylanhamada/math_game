@@ -16,5 +16,5 @@
   - question generator
   - input gatherer
   - question/answer evaluator
-  - player scores
   - current player
+  - player scores
