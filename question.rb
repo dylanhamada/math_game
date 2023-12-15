@@ -1,7 +1,9 @@
 # return an addition question and answer
 class Question
   # initialize variables
-  def initialize
+  def initialize(player)
+    # current player
+    @current_player = player
     # two numbers
     @numOne = rand(1..20)
     @numTwo = rand(1..20)
@@ -10,8 +12,11 @@ class Question
   # return a hash consisting of a question string and a number answer
   def question_answer 
     {
-      question: "What does #{@numOne} plus #{@numTwo} equal?",
+      question: "Player #{@current_player} What does #{@numOne} plus #{@numTwo} equal?",
       answer: @numOne + @numTwo
     }
   end
 end
+
+new_question = Question.new(2)
+puts new_question.question_answer
