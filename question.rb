@@ -1,5 +1,8 @@
 # return an addition question and answer
 class Question
+  attr_reader :answer
+  attr_reader :question_message
+  
   # initialize variables
   def initialize(player)
     # current player
@@ -7,16 +10,7 @@ class Question
     # two numbers
     @numOne = rand(1..20)
     @numTwo = rand(1..20)
-    @answer = nil
-  end
-
-  # return the answer
-  def answer 
     @answer = @numOne + @numTwo
-  end
-
-  # return a question string
-  def question_message
-    "Player #{@current_player}: What does #{@numOne} plus #{@numTwo} equal?"
+    @question_message = "Player #{@current_player}: What does #{@numOne} plus #{@numTwo} equal?"
   end
 end
