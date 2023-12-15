@@ -4,16 +4,18 @@ class Evaluate
     @input = input
     @answer = answer
     @player = player
+    @is_correct = true
   end
   
-  # return a string and boolean
-  def evaluation
-    correct = @input == @answer
-    message = correct ? "YES! You are correct." : "Seriously? No!"
+  # return a boolean of whether the provided answer is correct
+  def eval
+    is_correct = @input == @answer
+  end
+
+  # return a string message of whether the provided answer is correct
+  def eval_message
+    eval = @is_correct ? "YES! You are correct." : "Seriously? No!"
     
-    {
-      is_correct: correct,
-      evaluation_message: "Player #{@player}: #{message}"
-    }
+    message = "Player #{@player}: #{eval}"
   end
 end
