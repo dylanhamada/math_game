@@ -13,6 +13,6 @@ class Evaluate
   def eval_message
     eval = @is_correct ? "YES! You are correct." : "Seriously? No!"
     
-    message = "Player #{@player}: #{eval}"
+    "Player #{@player}: #{eval}"
   end
 end
